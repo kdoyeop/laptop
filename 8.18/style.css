@@ -1,0 +1,140 @@
+@import url(/reset.css);
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.spaceb {
+  justify-content: space-between;
+}
+
+.space-ev {
+  justify-content: space-evenly;
+}
+
+.text-no {
+  text-decoration: line-through;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-top: 5px solid #333333;
+  border-bottom: 1px solid #333333;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+header div {
+  height: 100px;
+  width: 1200px;
+  position: relative;
+}
+header div nav > ul {
+  position: absolute;
+  left: 620px;
+  top: 30px;
+  width: 600px;
+  height: 100%;
+}
+header div nav > ul li.main-menu {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+header div nav > ul li.main-menu > a {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #7c7c7c;
+  display: inline-block;
+}
+header div nav > ul li.main-menu > a:hover {
+  color: #000;
+}
+header div nav > ul li.main-menu .sub-menu {
+  width: 145px;
+  height: 162px;
+  margin: auto;
+  margin-top: 10px;
+}
+header div nav > ul li.main-menu .sub-menu li {
+  text-align: center;
+}
+header div nav > ul li.main-menu .sub-menu li a {
+  display: block;
+  padding: 12px;
+  font-weight: 600;
+  background-color: #b1b1b1;
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+header div nav > ul li.main-menu .sub-menu li a:hover {
+  color: #000;
+}
+
+.main {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.tab article {
+  width: 1200px;
+}
+.tab article div.item-list {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.tab article .product-item ul {
+  width: 1200px;
+  height: 290px;
+}
+.tab article .product-item ul li {
+  text-align: center;
+  gap: 10px;
+  width: 200px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.content .side {
+  width: 1200px;
+}
+.content .side .notice {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000;
+}
+.content .side .notice h2 {
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+.content .side .notice ul {
+  width: 400px;
+}
+.content .side .notice ul li {
+  padding: 8px;
+}
+
+footer div {
+  background-color: #333333;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+}
+footer div ul {
+  width: 320px;
+}

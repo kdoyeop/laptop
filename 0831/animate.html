@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boll {
+            position: absolute;
+            left: 10%;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background: royalblue;
+            border-radius: 50%;
+            animation-name: bollAni;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes bollAni{
+            from{bottom: 0;}
+            to{bottom: calc(100vh - 100px);}
+        }
+
+        .boll1{left: 35%;animation-duration: 3s;}
+        .boll2{left: 55%;animation-duration: 4s;}
+        .boll3{left: 75%;animation-duration: 5s;}
+    </style>
+</head>
+
+<body>
+    <div class="boll"></div>
+    <div class="boll boll1"></div>
+    <div class="boll boll2"></div>
+    <div class="boll boll3"></div>
+</body>
+
+</html>

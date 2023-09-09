@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상쾌한</title>
+</head>
+<style>
+    .avata{
+        width: 150px;
+        height: 270px;
+        border: 1px solid #000;
+    }
+
+    .ani-img{
+        width: -150px;
+        height: 270px;
+        background-image: url(./images/C_7.png);
+        animation: avataAni 1s steps(15) infinite;
+    }
+    .ani-img:hover{
+        animation-play-state: paused;
+    }
+
+    @keyframes avataAni {
+        100%{
+            background-position-x: -2250px;
+        }
+    }
+    
+</style>
+<body>
+    <div class="avata">
+        <div class="ani-img"></div>
+    </div>
+</body>
+</html>

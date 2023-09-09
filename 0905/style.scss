@@ -1,0 +1,165 @@
+@import url(/reset.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    video {
+        width: 100%;
+        min-width: 1800px;
+    }
+}
+
+header {
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    position: fixed;
+    height: 100%;
+    left: -600px;
+    width: 800px;
+    transform: skew(-40deg);
+
+    h1 {
+        transform: skew(40deg);
+        position: absolute;
+        right: 100px;
+        top: 10px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    ul.nav {
+        position: absolute;
+        right: 0;
+        width: 180px;
+        top: 180px;
+        text-align: center;
+
+        li.lv1 {
+            position: relative;
+
+            a {
+                display: block;
+                color: #fff;
+                padding: 10px;
+
+                span {
+                    transform: skew(40deg);
+                    display: block;
+                }
+            }
+
+
+            &:hover>a {
+                background: #4ae7c0;
+            }
+
+            &:hover ul.lv2 {
+                display: block;
+            }
+
+            ul.lv2 {
+                display: none;
+                position: absolute;
+                left: 180px;
+                top: 0;
+                width: 100%;
+
+                li {
+                    background: rgb(133, 200, 231);
+
+                    &:hover {
+                        background: #1fc1c7;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    right: -900px;
+    width: 900px;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    transition: 0.5s;
+    transform: skew(-40deg);
+    .brand {
+        background-image: linear-gradient(to right bottom, #a13c75, #9a4487, #8e4e97, #7e57a6, #6961b2, #556fbf, #3a7cc9, #0089d0, #009dd7, #00afd5, #00bfce, #0fcec2);
+        width: 700px;
+        height: 100%;
+        position: absolute;
+        left: 500px;
+        transition: 1s;
+
+        ul.aside-lv1 {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+
+            li {
+                transform: skew(40deg);
+
+                h1 {
+                    margin: 10px 0;
+                    margin-left: 50px;
+                }
+
+                .img-box {
+                    border: 1px solid #000;
+                    overflow: hidden;
+                    transform: skew(-40deg);
+
+                    img {
+                        height: 100px;
+                        transform: skew(40deg) scale(1.4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ball {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 100px;
+    animation-name: ballAni;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+    img {
+        width: 70%;
+    }
+}
+
+@keyframes ballAni{
+    from{bottom: 100px;}
+    to{bottom:120px;}
+}
+
+aside:hover {
+    transform: translateX(-300px) skew(-40deg);
+
+    .brand {
+        transform: translateX(-470px);
+    }
+}
+

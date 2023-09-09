@@ -1,0 +1,78 @@
+@import url(/reset.css);
+* {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.flex-d {
+  flex-direction: column;
+}
+
+.space-e {
+  justify-content: space-evenly;
+}
+
+.space-b {
+  justify-content: space-between;
+}
+
+.purple {
+  color: #6335e6;
+}
+
+ul {
+  background-color: #f8f8f8;
+}
+
+@media screen and (max-width: 750px) {
+  .container .inner {
+    width: 100%;
+  }
+  .container .inner .main {
+    width: inherit;
+  }
+  .container .inner .main h1 {
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .container .inner .main p {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .container .inner .sub {
+    width: inherit;
+  }
+  .container .inner .sub .content .menu .banner {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  .container .inner .sub .content .menu .banner img {
+    width: 67px;
+    height: 67px;
+  }
+  .container .inner .sub .content .menu .banner a {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  .container .inner .sub .content .menu ul {
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  .container .inner .sub .content .menu ul li {
+    padding: 10px;
+  }
+}

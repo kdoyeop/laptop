@@ -1,0 +1,201 @@
+@import '/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+//   공통속성--------------------------------
+.inner {
+    width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-b {
+    justify-content: space-between;
+}
+
+.align-c {
+    align-items: center;
+}
+
+// header------------------------------------
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    background-image: url(./pcbang_nexon_com/bg_header_wrap.gif);
+    transition: .35s;
+    overflow: hidden;
+
+    .inner {
+        height: 103px;
+    }
+
+    nav {
+        position: relative;
+        top: 18px;
+        width: 660px;
+
+        ul {
+            li.main-menu {
+                >a {
+                    width: 100px;
+                    height: 60px;
+                    display: block;
+                    background-image: url(./pcbang_nexon_com/bg_gnb.gif);
+                    color: transparent;
+                }
+
+                &:nth-child(1) >a {
+                    width: 84px;
+                }
+
+                &:nth-child(2)> a {
+                    width: 108px;
+                    background-position-x: -90px;
+                }
+
+                &:nth-child(3) >a {
+                    width: 60px;
+                    background-position-x: -202px;
+                }
+
+                &:nth-child(4) >a {
+                    width: 77px;
+                    background-position-x: -273px;
+                }
+
+                &:hover a {
+                    background-position-y: -70px;
+                }
+
+                ul.sub-menu {
+                    position: absolute;
+                    top: 60px;
+                    padding-top: 20px;
+
+                    li {
+                        margin-bottom: 20px;
+                        font-weight: bolder;
+                        white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+                        padding: 5px;
+
+                        &:hover a {
+                            background: #1cabe4;
+                            color: #fff;
+                        }
+
+                        a {
+                            display: inline-block;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+//section--------------------------
+.container {
+    position: relative;
+    top: 106px;
+    border: 1px solid #000;
+    height: 877px;
+
+
+    section {
+        flex-wrap: wrap;
+        width: 712px;
+        gap: 17px;
+
+        article {
+            width: 226px;
+            height: 206px;
+            transition: .35s;
+
+            &.goods {
+                background: url(./pcbang_nexon_com/bg_goods_info.gif);
+            }
+
+            &.pay {
+                background: url(./pcbang_nexon_com/bg_pay_list.gif);
+            }
+
+            &.game {
+                background: url(./pcbang_nexon_com/bg_game_play.gif);
+            }
+
+            &.event {
+                background: url(./pcbang_nexon_com/bg_event_apply.gif);
+            }
+
+            &.notic {
+                width: 469px;
+                background: #fdd;
+            }
+
+            &.ip {
+                background: url(./pcbang_nexon_com/bg_ip_manage.gif);
+            }
+
+            &.refund {
+                background: url(./pcbang_nexon_com/bg_refund_apply.gif);
+            }
+
+            &.tax {
+                background: url(./pcbang_nexon_com/bg_taxInvoice.gif);
+            }
+
+            &.cs {
+                width: 469px;
+                background: url(./pcbang_nexon_com/bg_customer_center.gif);
+            }
+
+            &.remote {
+                background: url(./pcbang_nexon_com/bg_remote_supply.gif);
+            }
+
+            &:hover {
+                background-position-y: bottom;
+            }
+        }
+    }
+
+    aside {
+        width: 470px;
+
+        form {
+            gap: 1rem;
+
+            .input {
+                width: 336px;
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                }
+            }
+
+            button {
+                width: 115px;
+            }
+        }
+    }
+}

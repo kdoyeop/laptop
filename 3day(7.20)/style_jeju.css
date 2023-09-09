@@ -1,0 +1,48 @@
+a {
+  color: inherit;
+}
+
+img.map {
+  width: 100%;
+}
+
+/* img.map -> img중에 이름이 map인 것,
+(띄어쓰기 하면 안됨-띄어쓰기 하면 하위의 태그를 의미하기 때문) */
+/* 부모의 크기에 맞춰라 */
+
+#wrap {
+  width: 480px;
+  margin: auto;
+
+}
+
+p.gray {
+  background: #eee;
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+
+nav ul li {
+  list-style: none;
+
+
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  padding:5px;
+
+}
+
+nav ul li a:hover,
+nav ul li a.on {
+  color: orange;
+  font-weight: bold;
+  
+}

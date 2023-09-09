@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    border: 1px solid #ccc;
+    height: 80px;
+    background: #fff;
+    
+}
+
+header h3 {
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+    font-weight: 900;
+}
+
+.pink {
+    color: #ea5493;
+}
+
+header ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+main nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav p {
+    border-radius: 15px;
+    height: 23px;
+    padding: 0 8px;
+    background: #ea5493;
+    color: #fff;
+}
+
+.hot {
+    width: 1280px;
+    height: 150px;
+    margin-left: 160px;
+    margin-top: 30px;
+}
+
+.hot nav h2{
+    font-weight: 900;
+}
+
+article img {
+    width: 180px;
+    height: 100%;
+    border: 2.3px solid #504e4e;
+    border-radius: 6px;
+}
+
+article {
+    /* border: 1px solid #000; */
+    border-radius: 15px;
+    background: #f4f5f9;
+    box-shadow: 0 4px 15px rgba(18, 23, 42, 0.03);
+    max-width: 1800px;
+    margin: auto;
+    margin-bottom: 60px;
+    
+}
+
+.book{
+    /* border: 1px solid #148e9e; */
+    width: 324px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    top: -4rem;
+}
+
+.book h3{
+    font-size: 25px;
+}
+
+article figure{position: relative;
+left: -2.5rem;}
+
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    background: rgba(49, 58, 71, 0.9);
+    color: #fff;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last{
+    margin-bottom:500px;
+}
+
+.atc{
+    background: #2e3846;
+    color: #fff;
+    padding: 14px;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+
+}
+
+.foot{
+    background: #ea5493;
+    color: #fff;
+    padding: 10px 100px;
+    border-radius: 8px;
+    width: 390px;
+}
+
+header ul li a:hover{
+    background: #7c7676;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px;
+}

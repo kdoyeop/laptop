@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXON</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="inner flex space-b align-c">
+            <h1><img src="./pcbang_nexon_com/logo.gif" alt=""></h1>
+            <nav>
+                <ul class="flex space-b">
+                    <li class="main-menu">
+                        <a href="#">My Pc방</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">내 정보관리</a></li>
+                            <li><a href="#">이용현황</a></li>
+                            <li><a href="#">결제현황</a></li>
+                            <li><a href="#">환불ㆍ이전 신청</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">상품과 결제</a>
+                        <ul class="sub-menu">
+                            <li class="#"><a href="#">상품안내 및 결제</a>
+                            </li>
+                            <li class="#"><a href="#">프리미엄 혜택</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">이벤트</a>
+                        <ul class="sub-menu">
+                            <li class=""><a href="#">진행 이벤트</a>
+                            </li>
+                            <li class=""><a href="#">종료 이벤트</a>
+                            </li>
+                            <li class=""><a href="#">신청 현황</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu">
+                        <a href="#">고객센터</a>
+                        <ul class="sub-menu">
+                            <li class=""><a href="#">공지사항</a>
+                            </li>
+                            <li class=""><a href="#">이메일 문의</a>
+                            </li>
+                            <li class=""><a href="#">FAQ</a>
+                            </li>
+                            <li class=""><a href="#">원격 지원</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container inner flex space-b">
+        <section class="flex">
+            <article class="goods"></article>
+            <article class="pay"></article>
+            <article class="game"></article>
+            <article class="event"></article>
+            <article class="notic"></article>
+            <article class="ip"></article>
+            <article class="refund"></article>
+            <article class="tax"></article>
+            <article class="cs"></article>
+            <article class="remote"></article>
+        </section>
+        <aside>
+            <form action="" class="flex">
+                <div class="input">
+                    <input type="text" placeholder="아이디 입력">
+                    <input type="password" placeholder="비밀번호 입력">
+                </div>
+                <button>로그인</button>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="col"></div>
+        <div class="col"></div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        //$('셀렉터').명령어
+        $('nav li').mouseenter(function () {
+            $('header').animate({ 'height': '345px' }, 80)
+        })
+        $('header').mouseleave(function () {
+            $('header').stop().animate({ 'height': '103px' }, 80)
+        })
+
+    </script>
+
+</body>
+
+</html>

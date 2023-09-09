@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import '/reset.css';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+.inner {
+  width: 1200px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-b {
+  justify-content: space-between;
+}
+
+.align-c {
+  align-items: center;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  background-image: url(./pcbang_nexon_com/bg_header_wrap.gif);
+  transition: 0.35s;
+  overflow: hidden;
+}
+header .inner {
+  height: 103px;
+}
+header nav {
+  position: relative;
+  top: 18px;
+  width: 660px;
+}
+header nav ul li.main-menu > a {
+  width: 100px;
+  height: 60px;
+  display: block;
+  background-image: url(./pcbang_nexon_com/bg_gnb.gif);
+  color: transparent;
+}
+header nav ul li.main-menu:nth-child(1) > a {
+  width: 84px;
+}
+header nav ul li.main-menu:nth-child(2) > a {
+  width: 108px;
+  background-position-x: -90px;
+}
+header nav ul li.main-menu:nth-child(3) > a {
+  width: 60px;
+  background-position-x: -202px;
+}
+header nav ul li.main-menu:nth-child(4) > a {
+  width: 77px;
+  background-position-x: -273px;
+}
+header nav ul li.main-menu:hover a {
+  background-position-y: -70px;
+}
+header nav ul li.main-menu ul.sub-menu {
+  position: absolute;
+  top: 60px;
+  padding-top: 20px;
+}
+header nav ul li.main-menu ul.sub-menu li {
+  margin-bottom: 20px;
+  font-weight: bolder;
+  white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+  padding: 5px;
+}
+header nav ul li.main-menu ul.sub-menu li:hover a {
+  background: #1cabe4;
+  color: #fff;
+}
+header nav ul li.main-menu ul.sub-menu li a {
+  display: inline-block;
+  padding: 5px;
+}
+
+.container {
+  position: relative;
+  top: 106px;
+  border: 1px solid #000;
+  height: 877px;
+}
+.container section {
+  flex-wrap: wrap;
+  width: 712px;
+  gap: 17px;
+}
+.container section article {
+  width: 226px;
+  height: 206px;
+  transition: 0.35s;
+}
+.container section article.goods {
+  background: url(./pcbang_nexon_com/bg_goods_info.gif);
+}
+.container section article.pay {
+  background: url(./pcbang_nexon_com/bg_pay_list.gif);
+}
+.container section article.game {
+  background: url(./pcbang_nexon_com/bg_game_play.gif);
+}
+.container section article.event {
+  background: url(./pcbang_nexon_com/bg_event_apply.gif);
+}
+.container section article.notic {
+  width: 469px;
+  background: #fdd;
+}
+.container section article.ip {
+  background: url(./pcbang_nexon_com/bg_ip_manage.gif);
+}
+.container section article.refund {
+  background: url(./pcbang_nexon_com/bg_refund_apply.gif);
+}
+.container section article.tax {
+  background: url(./pcbang_nexon_com/bg_taxInvoice.gif);
+}
+.container section article.cs {
+  width: 469px;
+  background: url(./pcbang_nexon_com/bg_customer_center.gif);
+}
+.container section article.remote {
+  background: url(./pcbang_nexon_com/bg_remote_supply.gif);
+}
+.container section article:hover {
+  background-position-y: bottom;
+}
+.container aside {
+  width: 470px;
+}
+.container aside form {
+  gap: 1rem;
+}
+.container aside form .input {
+  width: 336px;
+}
+.container aside form .input input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.container aside form button {
+  width: 115px;
+}

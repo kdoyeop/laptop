@@ -1,0 +1,65 @@
+@font-face {
+  font-family: GmarketSansBold;
+  src: url(../font/GmarketSansBold.woff);
+}
+
+@font-face {
+  font-family: Cafe24Ssurround;
+  src: url(../font/Cafe24Ssurround.woff);
+}
+
+@font-face {
+  font-family: JalnanOTF00;
+  src: url(../font/JalnanOTF00.woff);
+}
+
+@font-face {
+  font-family: GmarketSansMedium;
+  src: url(../font/GmarketSansMedium.woff);
+}
+
+section#sect1 h1 {
+  font-family: JalnanOTF00;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #450aef ;
+  margin-bottom: 40px;
+  margin-top: 0;
+  
+
+}
+
+section#sect1 p {
+  font-family: GmarketSansMedium;
+  
+  
+}
+
+p.main {
+  color: #fff;
+  font-size: 20px;
+}
+
+p.sub {
+  font-size: 15px;
+}
+
+
+
+section#sect1 h1 em {
+  display: block;
+  color: #ffcc00;
+  font-size: 14px;
+  font-family: GmarketSansBold;
+  margin-bottom: 0;
+}
+
+section#sect1 {
+  padding: 100px;
+  background: #8e6ed4;
+  line-height: 1.5;
+  
+  
+}
+
+

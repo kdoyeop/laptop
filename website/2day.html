@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    img {
+      width: 30%;
+      /* 단위:px , % 차이점 */
+    }
+
+    header {
+      max-width: 1280px;
+      margin: auto;
+    }
+
+
+    main {
+      max-width: 1280px;
+      border: 1px solid #000;
+      margin: auto;
+      ;
+    }
+
+    footer {
+      max-width: 1280px;
+      margin: auto;
+
+    }
+
+    .gray {
+      background: #000;
+      color: aliceblue;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* . 은 class 를 의미한다 */
+
+    ul li a {
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+    /* 띄어쓰기는 하위의 태그를 의미한다-> ul li a = ul 의 li 의 a 를 의미 */
+    ul li a:hover {
+      color: rgb(6, 121, 144);
+      text-decoration: none;
+    }
+
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      padding: 10px;
+    }
+
+    header ul li {
+      border: 1px solid rgb(6, 121, 144);
+      display: inline-block;
+    }
+    main{
+      padding: 12px;
+    }
+
+
+
+    p a{
+      text-decoration: none;
+    }
+
+    ol li a{
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="gray">
+    <h1>Doyeop Website</h1>
+    <ul id="web">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+
+  <main>
+    <h1>소개</h1>
+    <img src="../image/짱구.jpg" alt="">
+
+    <p>안녕하세요,저는 기능적인 웹사이트를 만드는데 열정적인 웹 개발자 <strong>김도엽</strong>입니다.</p>
+    <p>Check out my portfolio to see some of my previous projects.</p>
+    <p>제 포트폴리오에서<a href="#"> 이전 프로젝트</a> 확인해 보세요. </p>
+    <p>물의 분자식은 H<sub>2</sub>O</p>
+    <p>빛의 속도는 약 3 x 10<sup>8</sup>m/s</p>
+    <ol>
+      <li><a href="/2day/01_ex1.html">프로젝트1</a></li>
+      <li><a href="/3day(7.20)/index.html">프로젝트2</a></li>
+      <li><a href="../1day/first.html">프로젝트3</a></li>
+      <hr>
+      <h1>서비스</h1>
+      <ul>
+        <li>
+          <h2>웹 디자인</h2> <br />
+          <p>저는 고객의 요구에 맞춘 시각적으로 매력적이고 사용자 친화적인 웹사이트 디자인을 전문으로 제작합니다.</p>
+        </li>
+        <li>
+          <h2>프론트엔드 개발</h2><br />
+          <p>저는 인터랙티브하고 반응이 빠른 기능으로 웹사이트에 생동감을 불어넣을 수 있는 HTML,CSS,JavaScript에 대한 전문 지식을 갖추고 있습니다.</p>
+        </li>
+        <li>
+          <h2>웹사이트 유지 관리</h2><br />
+          <p>웹사이트를 최신 상태로 유지할 수 있도록 지속적인 지원 및 유지보수 서비스를 제공합니다.</p>
+        </li>
+      </ul>
+      <hr>
+      <h1>고객 평가</h1>
+      <p>
+      <blockquote>
+        <p>
+          <em>제니와 함께 일한 것은 놀라운 경험이었습니다. 그는 우리의 기대를 뛰어넘어 뛰어난 결과를 제공했습니다!</em>
+        </p>
+        <p><strong>행복한 고객</strong>
+        </p>
+      </blockquote>
+
+      </p>
+  </main>
+
+
+  <footer class="gray">
+    <p>&copy;2023 my website. All rights reserved.</p>
+  </footer>
+
+
+</body>
+
+</html>
